@@ -18,11 +18,13 @@ class ProductGrid extends StatelessWidget {
           backgroundColor: Colors.black54,
           title: Row(
             children: [
-              Text(
-                product.title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: Colors.white, fontSize: 14),
-                softWrap: true,
+              Flexible(
+                child: Text(
+                  product.title,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: Colors.white, fontSize: 14),
+                  softWrap: true,
+                ),
               ),
             ],
           ),

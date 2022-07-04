@@ -7,7 +7,7 @@ class ProductOverviewScreen extends StatelessWidget {
   final List<Product> loadedProducts = [
     Product(
       id: 'p1',
-      title: 'Sweat     \n Shirt',
+      title: 'Sweat \n Shirt',
       description: '--',
       price: 30.99,
       imageUrl:
@@ -16,7 +16,7 @@ class ProductOverviewScreen extends StatelessWidget {
     ),
     Product(
       id: 'p2',
-      title: 'Girl\n Sneakers',
+      title: 'Girl Sneakers',
       description: '--',
       price: 30.99,
       imageUrl:
