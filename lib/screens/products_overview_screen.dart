@@ -7,7 +7,7 @@ class ProductOverviewScreen extends StatelessWidget {
   final List<Product> loadedProducts = [
     Product(
       id: 'p1',
-      title: 'Sweat Shirt',
+      title: 'Sweat     \n Shirt',
       description: '--',
       price: 30.99,
       imageUrl:
@@ -16,7 +16,7 @@ class ProductOverviewScreen extends StatelessWidget {
     ),
     Product(
       id: 'p2',
-      title: 'Girl Sneakers',
+      title: 'Girl\n Sneakers',
       description: '--',
       price: 30.99,
       imageUrl:
@@ -50,8 +50,8 @@ class ProductOverviewScreen extends StatelessWidget {
         title: const Text("Crafty Commerce"),
       ),
       body: Container(
-        margin: const EdgeInsets.all(15),
-        padding: const EdgeInsets.all(15),
+        margin: const EdgeInsets.only(top: 20.0),
+        padding: const EdgeInsets.all(5),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,

@@ -16,14 +16,18 @@ class ProductGrid extends StatelessWidget {
         ),
         footer: GridTileBar(
           backgroundColor: Colors.black54,
-          title: Text(
-            product.title,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.white,
-            ),
+          title: Row(
+            children: [
+              Text(
+                product.title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(color: Colors.white, fontSize: 14),
+                softWrap: true,
+              ),
+            ],
           ),
-          leading: IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
+          leading:
+              IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
           trailing: IconButton(
             onPressed: () {},
             icon: const Icon(Icons.shopping_cart),
